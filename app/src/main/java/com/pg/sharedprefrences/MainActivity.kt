@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 
@@ -17,6 +18,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var btn_register: Button
     lateinit var tv_userName: TextView
     lateinit var tv_password: TextView
+    lateinit var iv_banklogo:ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         btn_register = findViewById(R.id.btn_register)
         tv_userName = findViewById(R.id.tv_userName)
         tv_password = findViewById(R.id.tv_password)
+        iv_banklogo=findViewById(R.id.iv_bank_logo)
         var mySharedPref = this.getSharedPreferences("My_app_pref", Context.MODE_PRIVATE)
 
 
